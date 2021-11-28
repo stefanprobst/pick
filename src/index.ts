@@ -1,4 +1,4 @@
-export function pick<T extends Record<string, unknown>, K extends keyof T>(
+export function pick<T extends object, K extends keyof T>(
   obj: T,
   keys: Array<K>
 ): Pick<T, K> {
